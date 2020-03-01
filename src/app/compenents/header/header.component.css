@@ -1,0 +1,12 @@
+.container-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+
+}
+.logo-style{
+  width: auto;
+  height: 6rem;
+}
+
