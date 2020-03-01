@@ -1,0 +1,19 @@
+.footer-container{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item-footer{
+  background-color: blue;
+  flex-grow: 1;
+  margin: 10px;
+
+}
+
+.image-style{
+  height: 3rem;
+  width: auto;
+}
