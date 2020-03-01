@@ -17,3 +17,28 @@
   height: 3rem;
   width: auto;
 }
+/*--------------------------------------------------*/
+
+.footers a {color:#696969;}
+.footers p {color:#696969;}
+.footers ul {line-height:30px;}
+#social-icons-unit:hover {
+     color: #3B5998;
+     transition:all .001s;
+ }
+ #social-icons-unit{
+   color: #0353ae;
+   margin-right: 8px;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+     transition:all .001s;
+ }
+ #social-gp:hover {
+     color: #d34836;
+     transition:all .001s;
+ }
+ #social-em:hover {
+     color: #f39c12;
+     transition:all .001s;
+ }
