@@ -1,1 +1,149 @@
-<p>formulario works!</p>
+<div class="container">
+  <div class="row">
+    <h2>Formulário</h2>
+  </div>
+  <div class="row">
+    <div class="col-8 border-right">
+      <div class="p-2 text-center">
+        <h5>DADOS PESSOAIS</h5>
+      </div>
+      <form>
+        <div class="row">
+          <mat-form-field appearance="outline" class="col-md-6">
+            <mat-label>Nome</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-6">
+            <mat-label>Ultimo nome</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-6">
+            <mat-label>CPF</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-6">
+            <mat-label>Data Nascimento</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-12">
+            <mat-label>E-mail</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-checkbox class="col-md-12">Adicionar acompanhante</mat-checkbox>
+        </div>
+        <div *ngIf="true">
+          <div class="row">
+            <mat-form-field appearance="outline" class="col-md-6">
+              <mat-label>Nome</mat-label>
+              <input matInput type="text">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="col-md-6">
+              <mat-label>Ultimo nome</mat-label>
+              <input matInput type="text">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="col-md-6">
+              <mat-label>CPF</mat-label>
+              <input matInput type="text">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="col-md-6">
+              <mat-label>Data Nascimento</mat-label>
+              <input matInput type="text">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="col-md-12">
+              <mat-label>E-mail</mat-label>
+              <input matInput type="text">
+            </mat-form-field>
+          </div>
+        </div>
+        <h4>Dados da Entrega</h4>
+        <div class="row">
+          <mat-form-field appearance="outline" class="col-md-12">
+            <mat-label>CEP</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-12">
+            <mat-label>Endereço</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-6">
+            <mat-label>País</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-6">
+            <mat-label>Estado</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="col-md-12">
+            <mat-label>Telefone</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
+        </div>
+        <button mat-raised-button
+                color="#0353ae"
+                class="float-right p-3 col-md-3"
+                style="background-color: #0353ae; color: #fff;"
+          >
+                <h4>Enviar</h4>
+        </button>
+      </form>
+    </div>
+    <div class="col-4">
+      <div class="p-2 text-center">
+        <h5>Seu Ingresso</h5>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5">
+          <img class="thumbnail-img" src="http://br.web.img2.acsta.net/c_215_290/medias/nmedia/18/90/90/21/20119166.jpg" alt=" O Guia do Mochileiro das Galáxias" width="135" height="180">
+        </div>
+        <div class="col-md-7">
+          <p>Ingresso</p>
+          <p>FILME: O guia do mochileiro das galáxias</p>
+          <span class="mt-1 mb-0 color-destaque">
+            <p>R$ 20,00</p>
+          </span>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <span class="col-md-6">
+          Sub-total
+        </span>
+        <span class="col-md-6 text-right text-secondary">
+          R$ 20,00
+        </span>
+      </div>
+      <div class="row">
+        <span class="col-md-6">
+          Frete
+        </span>
+        <span class="col-md-6 text-right text-secondary">
+          R$ 10,00
+        </span>
+      </div>
+      <div class="row font-weight-bold mt-4">
+        <span class="col-md-6">
+          Total
+        </span>
+        <span class="col-md-6 text-right color-destaque">
+          R$ 30,00
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
