@@ -1,4 +1,7 @@
 <div class="container">
+<!--  <pre>-->
+<!--    {{reserva | json}}-->
+<!--  </pre>-->
   <div class="row">
     <h2>Formulário</h2>
   </div>
@@ -7,31 +10,51 @@
       <div class="p-2 text-center">
         <h5>DADOS PESSOAIS</h5>
       </div>
-      <form>
+      <form >
         <div class="row">
           <mat-form-field appearance="outline" class="col-md-6">
             <mat-label>Nome</mat-label>
-            <input matInput type="text">
+            <input
+                  matInput
+                  [(ngModel)]="reserva.dadosPessoais.nome"
+                  name="nome"
+                  type="text">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-6">
             <mat-label>Ultimo nome</mat-label>
-            <input matInput type="text">
+            <input
+                  matInput
+                  [(ngModel)]="reserva.dadosPessoais.ultimoNome"
+                  name="ultimoNome"
+                  type="text">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-6">
             <mat-label>CPF</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.dadosPessoais.cpf"
+                  name="cpf"
+                  matInput
+                  type="text" mask="000.000.000-00">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-6">
             <mat-label>Data Nascimento</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.dadosPessoais.dataNascimento"
+                  name="dataNascimento"
+                  matInput
+                  type="text" mask="00/00/0000">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-12">
             <mat-label>E-mail</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.dadosPessoais.email"
+                  name="email"
+                  matInput
+                  type="text">
           </mat-form-field>
         </div>
         <div class="row">
@@ -41,27 +64,47 @@
           <div class="row">
             <mat-form-field appearance="outline" class="col-md-6">
               <mat-label>Nome</mat-label>
-              <input matInput type="text">
+              <input
+                    [(ngModel)]="reserva.acompanhante.nome"
+                    name="nomeAcompanhante"
+                    matInput
+                    type="text">
             </mat-form-field>
 
             <mat-form-field appearance="outline" class="col-md-6">
               <mat-label>Ultimo nome</mat-label>
-              <input matInput type="text">
+              <input
+                    [(ngModel)]="reserva.acompanhante.ultimoNome"
+                    name="ultimoNomeAcompanhante"
+                    matInput
+                    type="text">
             </mat-form-field>
 
             <mat-form-field appearance="outline" class="col-md-6">
               <mat-label>CPF</mat-label>
-              <input matInput type="text">
+              <input
+                    [(ngModel)]="reserva.acompanhante.cpf"
+                    name="cpfAcompanhante"
+                    matInput
+                    type="text" mask="000.000.000-00">
             </mat-form-field>
 
             <mat-form-field appearance="outline" class="col-md-6">
               <mat-label>Data Nascimento</mat-label>
-              <input matInput type="text">
+              <input
+                    [(ngModel)]="reserva.acompanhante.dataNascimento"
+                    name="dataNascimentoAcompanhante"
+                    matInput
+                    type="text" mask="00/00/0000">
             </mat-form-field>
 
             <mat-form-field appearance="outline" class="col-md-12">
               <mat-label>E-mail</mat-label>
-              <input matInput type="text">
+              <input
+                    [(ngModel)]="reserva.acompanhante.email"
+                    name="emailAcompanhante"
+                    matInput
+                    type="text">
             </mat-form-field>
           </div>
         </div>
@@ -69,27 +112,48 @@
         <div class="row">
           <mat-form-field appearance="outline" class="col-md-12">
             <mat-label>CEP</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.cep"
+                  name="cep"
+                  matInput
+                  (blur)="consultaCep($event.target.value)"
+                  type="text" mask="00.000-000">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-12">
             <mat-label>Endereço</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.endereco"
+                  name="endereco"
+                  matInput
+                  type="text">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-6">
             <mat-label>País</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.pais"
+                  name="pais"
+                  matInput
+                  type="text">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-6">
             <mat-label>Estado</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.estado"
+                  name="estado"
+                  matInput
+                  type="text">
           </mat-form-field>
 
           <mat-form-field appearance="outline" class="col-md-12">
             <mat-label>Telefone</mat-label>
-            <input matInput type="text">
+            <input
+                  [(ngModel)]="reserva.telefone"
+                  name="telefone"
+                  matInput
+                  type="text" mask="(00)000000009">
           </mat-form-field>
         </div>
         <button mat-raised-button
